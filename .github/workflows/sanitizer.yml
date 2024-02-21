@@ -19,6 +19,7 @@ jobs:
       - name: Install dependencies
         id: install_deps
         run: |
+          chmod +x ./scripts/install_deps_ubuntu.sh 
           ./scripts/install_deps_ubuntu.sh 
 
       - name: Build
